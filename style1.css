@@ -9,6 +9,34 @@ body {
 }
 .about-wrapper {
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+.heading{
+  grid-column: 1 / span 2;
+  background-color: #21d4fd;
+}
+.nav-area {
+  float: right;
+  list-style: none;
+  margin: 30px;
+  
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+ 
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: poppins;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.nav-area li a:hover {
+  background: #fff;
+  color: #333;
 }
 .about-left {
   background-color: #21d4fd;
