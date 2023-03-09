@@ -1,0 +1,1 @@
+const printName=(name)=>`Hi ${name}`;
