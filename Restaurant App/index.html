@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Restaurant Application</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <div class="tables">
+          <h1>
+            <center>TABLES</center>
+          </h1>
+
+          <input type="text" placeholder="Search table" id="search-input" />
+
+          <div id="myModalOne" class="modal">
+            <div class="modal-content" id="myModal1">
+              <h3 class="heading">
+                Table-1 | Order Details
+                <span class="close" onclick="close(event)">&times;</span>
+              </h3>
+
+              <table id="order-table">
+                <tr>
+                  <th>S.No</th>
+                  <th>Item</th>
+                  <th>No. of Items</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+              </table>
+
+              <div class="table-details">
+                <div class="tble-dtls">
+                  <span>Total Items:<span id="total-items1">0</span></span>
+                  <span>Total Cost:<span id="total-cost1">0</span></span>
+                </div>
+              </div>
+              <div class="generatebill">
+                <h3 onclick="generateBill1()">CLOSE SESSION (GENERATE BILL)</h3>
+              </div>
+            </div>
+          </div>
+
+          <div id="myModalTwo" class="modal">
+            <div class="modal-content" id="myModal2">
+              <h3 class="heading">
+                Table-2 | Order Details
+                <span class="close" onclick="close(event)">&times;</span>
+              </h3>
+
+              <table id="order-table1">
+                <tr>
+                  <th>S.No</th>
+                  <th>Item</th>
+                  <th>No. of Items</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+              </table>
+
+              <div class="table-details">
+                <div class="tble-dtls">
+                  <span>Total Items: <span id="total-items2">0</span></span>
+                  <span>Total Cost: <span id="total-cost2">0</span></span>
+                </div>
+              </div>
+              <div class="generatebill">
+                <h3 onclick="generateBill2()">CLOSE SESSION (GENERATE BILL)</h3>
+              </div>
+            </div>
+          </div>
+          <div id="myModalThree" class="modal">
+            <div class="modal-content" id="myModal3">
+              <h3 class="heading">
+                Table-3 | Order Details
+                <span class="close" onclick="close(event)">&times;</span>
+              </h3>
+
+              <table id="order-table2">
+                <tr>
+                  <th>S.No</th>
+                  <th>Item</th>
+                  <th>No. of Items</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+              </table>
+
+              <div class="table-details">
+                <div class="tble-dtls">
+                  <span>Total Items:<span id="total-items3">0</span></span>
+                  <span>Total Cost:<span id="total-cost3">0</span></span>
+                </div>
+              </div>
+              <div class="generatebill">
+                <h3 onclick="generateBill3()">CLOSE SESSION (GENERATE BILL)</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablecard">
+            <div
+              class="table"
+              ondragover="allowDrop(event)"
+              ondrop="drop1(event)"
+              id="table1"
+            >
+              <h2 class="h2h2">
+                <b><center>Table-1</center></b>
+              </h2>
+              <span id="total-cost-1">Total Cost: 0.00</span><span>|</span>
+              <span id="total-items-1">Total Items: 0</span>
+            </div>
+          </div>
+
+          <div class="tablecard">
+            <div
+              class="table"
+              ondragover="allowDrop(event)"
+              ondrop="drop2(event)"
+              id="table2"
+            >
+              <h2 class="h2h2">
+                <b><center>Table-2</center></b>
+              </h2>
+              <span id="total-cost-2">Total Cost: 0.00</span><span>|</span>
+              <span id="total-items-2">Total Items: 0</span>
+            </div>
+          </div>
+
+          <div class="tablecard">
+            <div
+              class="table"
+              ondragover="allowDrop(event)"
+              ondrop="drop3(event)"
+              id="table3"
+            >
+              <h2 class="h2h2">
+                <b><center>Table-3</center></b>
+              </h2>
+              <span id="total-cost-3">Total Cost: 0.00 </span><span>|</span>
+              <span id="total-items-3">Total Items: 0 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="Menu" id="test">
+          <h1>
+            <center>MENU</center>
+          </h1>
+
+          <input
+            type="text"
+            placeholder="Search menu"
+            id="search"
+            onkeyup="searchMenu()"
+          />
+
+          <div class="menucard" id="drag-div" draggable="true"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
