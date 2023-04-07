@@ -4,5 +4,4 @@ const person = {
 };
 
 let { name, age } = person;
-console.log(name);
 console.log(age);
