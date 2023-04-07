@@ -1,0 +1,85 @@
+{
+  "tables": [
+    {
+      "id": 1,
+      "table": "Table-1",
+      "items": [],
+      "totalprice": "0"
+    },
+    {
+      "id": 2,
+      "table": "Table-2",
+      "items": [],
+      "totalPrice": "0"
+    },
+    {
+      "id": 3,
+      "table": "Table-3",
+      "items": [],
+      "totalprice": "0"
+    }
+  ],
+
+  "menu": [
+    {
+      "id": 1,
+      "name": "French Fries",
+      "price": "105",
+      "category": "sidefood"
+    },
+    {
+      "id": 2,
+      "name": "Crusty Garlic Focaccia with Melted Cheese",
+      "price": "105",
+      "category": "appetizer"
+    },
+    {
+      "id": 3,
+      "name": "Icecream",
+      "price": "50",
+      "category": "dessert"
+    },
+    {
+      "id": 4,
+      "name": "Pizza",
+      "price": "100",
+      "category": "main course"
+    },
+    {
+      "id": 5,
+      "name": "French Fries with Cheese and jelapenos",
+      "price": "150",
+      "category": "appetizer"
+    },
+    {
+      "id": 6,
+      "name": "Burger",
+      "price": "170",
+      "category": "sidefood"
+    },
+    {
+      "id": 7,
+      "name": "Biriyani",
+      "price": "150",
+      "category": "main course"
+    },
+    {
+      "id": 8,
+      "name": "Fried Rice",
+      "price": "70",
+      "category": "main course"
+    },
+    {
+      "id": 9,
+      "name": "Pasta",
+      "price": "200",
+      "category": "cuisine"
+    },
+    {
+      "id": 10,
+      "name": "Manchuria",
+      "price": "70",
+      "category": "Starter"
+    }
+  ]
+}

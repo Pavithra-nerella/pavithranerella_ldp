@@ -1,0 +1,286 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  content: wrap;
+}
+
+nav {
+  background-color: #39393c;
+  padding: 0.15%;
+}
+
+nav h1 {
+  margin-left: 2%;
+  color: rgb(255, 255, 255);
+  padding-left: 40%;
+}
+
+.tables h1 {
+  padding: 2%;
+}
+
+.menucard {
+  background-color: rgb(255, 255, 255);
+  margin-top: 1%;
+  margin-bottom: 5%;
+  cursor: move;
+}
+
+.menucard.over {
+  border: 3px dotted #666;
+}
+
+input {
+  margin-left: 10%;
+  margin-top: 0.25%;
+  margin-bottom: 2%;
+}
+
+.table,
+.menu-item {
+  height: 100px;
+  width: 300px;
+  box-shadow: 1px 1px 1px 1px rgb(159, 153, 153);
+  border-radius: 2%;
+  margin: 2%;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+.table,
+.menu-item {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.menu-price {
+  font-size: 1rem;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 40%;
+  vertical-align: middle;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  width: 300px;
+  vertical-align: middle;
+  padding: 5%;
+}
+
+.tables {
+  height: 500px;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 3%;
+}
+
+input {
+  width: 70%;
+  color: #242424;
+  padding: 5px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.98);
+  line-height: 1.15;
+  box-shadow: 0px 2px 20px -18px rgba(13, 13, 0.18);
+}
+
+input:focus {
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+#order-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#order-table1 {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#order-table1 th,
+#order-table1 td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#order-table1 th {
+  background-color: #f2f2f2;
+}
+
+#order-table1 td:first-child {
+  font-weight: bold;
+}
+
+#order-table2 {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#order-table2 th,
+#order-table2 td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#order-table2 th {
+  background-color: #f2f2f2;
+}
+
+#order-table2 td:first-child {
+  font-weight: bold;
+}
+
+#order-table th,
+#order-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#order-table th {
+  background-color: #f2f2f2;
+}
+
+#order-table td:first-child {
+  font-weight: bold;
+}
+
+.menu-item {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  margin-bottom: 2%;
+  cursor: move;
+}
+
+.menu-title {
+  font-weight: bold;
+  color: #242424;
+}
+
+.menu-price {
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#total-items-1,
+#total-items-2,
+#total-items-3 {
+  margin-left: 5%;
+}
+
+#total-cost-1,
+#total-cost-2,
+#total-cost-3 {
+  margin-left: 10%;
+}
+
+.h2h2 {
+  padding: 3%;
+}
+
+.generatebill h3 {
+  padding-left: 70%;
+  font-size: 15px;
+  cursor: pointer;
+}
+.cls-btn {
+  padding-left: 95%;
+  padding-top: 0.15%;
+}
+
+.tble-dtls {
+  padding-inline: 50px;
+}
+.heading {
+  padding: 2%;
+  margin-top: 0px;
+  color: white;
+  background-color: #4285f4;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  left: 20%;
+  top: 15%;
+  width: 60%;
+  height: 60%;
+  overflow: auto;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  align-items: normal;
+  overflow: auto;
+}
+
+.close {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fffefe;
+  text-decoration: none;
+  cursor: pointer;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading .close {
+  margin-left: auto;
+}
+.container {
+  display: flex;
+}
+
+.container1 {
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  width: 30%;
+  border-right: solid;
+}
+.container2 {
+  margin: 0.5%;
+  padding: 1%;
+  background-color: rgb(254, 254, 253);
+  height: auto;
+  width: 70%;
+  padding-bottom: 2%;
+}
